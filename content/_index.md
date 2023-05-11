@@ -1,24 +1,20 @@
----
-title: "AWS Modernization Workshop Base Template" # MODIFY THIS TO BE THE TITLE OF YOUR WORKSHOP
-chapter: true
-weight: 1
----
++++
+title = "Auth0 by Okta Workshop"
+chapter = true
+weight = 1
++++
 
-# AWS Modernization Workshop Base Template <!-- CHANGE THIS TO BE THE TITLE OF YOUR WORKSHOP -->
-<br>
-![Partner Logo](/images/AWS_Logo.png)  <!-- ADD YOUR PARTNER LOGO HERE USING THE INSTRUCTIONS BELOW -->
-<br>
+![Overview](/images/auth0_by_okta_logo.png)
 
-## Welcome
+Last Updated May 11th 2023.
 
-**REMOVE:** By utilizing this template, you can create your workshops with little coding knowledge. These workshops use the Hugo Framework and the hugo-theme-learn submodules. By writing content using simple markdown code, Hugo creates the necessary HTML for you. Examples of code, files, and folders here can be modified, copied, pasted, and deleted as necessary. Block sections of instruction that should be removed will be explicitly marked with **REMOVE**. Other sections should be modified to reflect the workshop. For guidance on how to utilize the Hugo framework and markdown, please refer to the module titled "Hugo Framework And Markdown". That module can be removed once building the workshop is complete.
+In this Workshop, you will learn how to secure Consumer, B2B and SaaS applications with Auth0 by Okta.
 
-This paragraph block can give the high level overview of the learning goals and use cases of what the workshop is trying to teach.
+Auth0 is a flexible, drop-in solution to add authentication and authorization services to your applications. Your team and organization can avoid the cost, time, and risk that come with building your own solution to authenticate and authorize users.
 
-This paragraph block can be used to introduce the company and how the solution being taught addresses specific issues.
+The goal of the workshop is to build an end-to-end demo environment from creating a free Auth0 Tenant and AWS account, adding Auth0 to an application, customizing the login form and enabling business-to-business authentication.
 
-**REMOVE:** Every introduction page should include the following warning label.
+## Auth0 and AWS Marketplace
+Auth0 is available on the AWS Marketplace. AWS Marketplace is a digital software catalog that makes it easy to find, try, buy, deploy, and manage software that runs on AWS. AWS Marketplace has a broad and deep selection of ISV solutions that can help you to get your ideal Identity solution in the cloud.
 
-{{% notice warning %}}
-The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various AWS services can be architected to build a solution while demonstrating best practices along the way. These examples are not intended for use in production environments.
-{{% /notice %}}
+<a href="https://aws.amazon.com/marketplace/pp/prodview-zrkhqreht5sw4?sr=0-1&ref_=beagle&applicationId=AWSMPContessa" target="_blank"><img src="/images/available-in-awsmp-badge.png"></a>
