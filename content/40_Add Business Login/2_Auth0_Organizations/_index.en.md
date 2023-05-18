@@ -13,7 +13,7 @@ The Organizations feature represents a broad update to the Auth0 platform that a
 ### 1. Create Organization
 Auth0 has a native concept of Organizations that makes it easier for you as a developer to organize and manage all your business customers and their login into your solution.
 
-1. To create an organization, go to **Organizations**** in the sidebar of the Auth0 Dashboard and click on **Create Organization**.
+1. To create an organization, go to **Organizations** in the sidebar of the Auth0 Dashboard and click on **Create Organization**.
 2. Give it an easy to remember name (users will need it when signing into your app) and click **Add Organization**.
 
 ### 2. Enable Enterprise Login for Organization
@@ -31,14 +31,14 @@ Lastly, we need to let our Pizza0 application know that we expect business users
 2. In the following window, you will find a tab called **Organizations**. Navigate to that, enable the Display Organization Prompt and set the dropdown to **Team members of organizations**.
 3. Note: Eventually the option to enable organizations will be greyed out. There will be a warning box that some login grants have to be disabled first. Click on **Disable Grants Now** and proceed.
 
-### 5. Test
+### 4. Test
 Return to your Pizza0 site and click on login.
 
 - You will now be asked to enter your organizations name (which is the one you gave to your organization when you registered it).
 The login will automatically redirect you to your Identity Provider (aka Okta if you follow the lab), where you can sign in with your users credentials.
 - After successful login, you should now have an organization ID displayed in the header of the Pizza0 site.
 
-## 6. Next Step
+### 5. Next Step
 - Congratulations, you can now start your successful B2B business! By completing these steps we now can safely integrate our business customers into our application and even make sure to keep track of them through organizations. Under the hood, this brings a lot of value: Your customers admins can still provision / deprovision users, control who has access to your app, and see how frequently your app is used. And you just saved a few days of building your own OpenID Connect integration!
 - If you are doing this lab in a guided class, please wait for your instructor to continue the course.
 - Otherwise, you may proceed to the next lab to see how you can give your application a lot more information about our users.

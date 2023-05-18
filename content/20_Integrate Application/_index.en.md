@@ -11,9 +11,14 @@ This sample B2B SaaS App (let's call it Pizza0) uses Node.js to host their servi
 - If you're using a free trial tenant, sign in to https://manage.auth0.com
 
 ### 2. Create and integrate a new Application
-- Go to **Applications** and register a new **Single Page Web Application**. You can give it any name, for example `CIC Workshop`.
-- On the prompted Quick Start menu, choose JavaScript and **I want to integrate with my app**.
-- Follow the guidance on the screen to set up your integration.
+1. Go to **Applications** -> **Applications** and click on **+ Create Application**.
+2. Enter as Name `CIC Workshop`, select **Single Page Web Application** and click on **Create**.
+3. On the prompted Quick Start menu, choose **JavaScript**
+4. Follow the instructions of **I want to integrate with my app**
+    - Copy the **Domain** and **Client ID** of the created Auth0 Application
+
+TODO: rewrite this part
+
 - Code Integration Hint:
     - To specify the application client ID and domain, make a copy of **auth_config.json.example** and rename it to `auth_config.json`.
     - Then open it in a text editor and supply the values for your application: `{ "domain": "", "clientId": "" }`
