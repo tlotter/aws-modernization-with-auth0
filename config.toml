@@ -55,9 +55,7 @@ url = "https://okta.awsworkshop.io/"
 weight = 11
 
 [markup]
-  defaultMarkdownHandler = "blackfriday"
-  [markup.blackFriday]
-    hrefTargetBlank = true
+  defaultMarkdownHandler = "goldmark"
 
 [Languages] # Modify to change the language/version settings and/or version secondary extensions
 [Languages.en]
