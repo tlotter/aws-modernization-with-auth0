@@ -13,32 +13,56 @@ The Organizations feature represents a broad update to the Auth0 platform that a
 ### 1. Create Organization
 Auth0 has a native concept of Organizations that makes it easier for you as a developer to organize and manage all your business customers and their login into your solution.
 
-1. To create an organization, go to **Organizations** in the sidebar of the Auth0 Dashboard and click on **Create Organization**.
-2. Give it an easy to remember name (users will need it when signing into your app) and click **Add Organization**.
+1. At the navigation bar on the right of the Auth0 Management Dashboard, go to **Organizations** and click on **+ Create Organization**.
+2. Enter the name `org1` and click **Add Organization**.
 
 ### 2. Enable Enterprise Login for Organization
-Next, you need to enable the OIDC connection you just created in the new organization.
+Next, you need to enable the Okta connection you just created in the new organization.
 
-1. In your organization, go to **Connections** -> **Enable Connections**.
-2. Find the connection you have previously created and click **Enable Connection**.
-3. In the next window, click on **Enable Auto-Membership** and **Save**.
-4. This means that users who will access your app through this connection will automatically be part of your organization.
+1. In your created organization, switch to the tab **Connections**
+2. Click on **Enable Connections**.
+3. Select **Okta1** and click on **Enable Connection**.
+4. In the next window, select on **Enable Auto-Membership** and **Save**.
+    - This means that users who will access your app through this connection will automatically be part of your organization.
 
 ### 3. Assign Organization to Application
-Lastly, we need to let our Pizza0 application know that we expect business users to sign in instead of everyday end users.
+Lastly, we need to let our application know that we expect business users to sign in instead of everyday end users.
 
-1. Find your application by navigating to **Applications** -> **Applications** in the Auth0 Dashboard and click on the application you have registered previously.
-2. In the following window, you will find a tab called **Organizations**. Navigate to that, enable the Display Organization Prompt and set the dropdown to **Team members of organizations**.
-3. Note: Eventually the option to enable organizations will be greyed out. There will be a warning box that some login grants have to be disabled first. Click on **Disable Grants Now** and proceed.
+1. At the navigation bar on the right of the Auth0 Management Dashboard, go to **Applications** -> **Applications**
+2. Click on the name of the **CIC Workshop** Application.
+3. Switch to the **Organizations**.
+4. Select **Team members of organizations** and **Display Organization Prompt**.
+    - Note: Eventually the option to enable organizations will be greyed out. There will be a warning box that some login grants have to be disabled first. Click on **Disable Grants Now** and proceed.
+5. Click on **Save Changes**.
 
 ### 4. Test
-Return to your Pizza0 site and click on login.
 
-- You will now be asked to enter your organizations name (which is the one you gave to your organization when you registered it).
-The login will automatically redirect you to your Identity Provider (aka Okta if you follow the lab), where you can sign in with your users credentials.
-- After successful login, you should now have an organization ID displayed in the header of the Pizza0 site.
+1. Navigate to your application, logout and login again (`http://localhost:3000`). 
+2. You will be asked to enter your organizations name. Enter `org1` and click on **Continue**.
+    - The login will automatically redirect you to your Identity Provider (aka Okta if you follow the lab), where you can sign in with your users credentials.
+3. After successful login, click on your Profile on the top left right corner and click on **Profile**.
+4. You will notice, that the desplayed JSON has the new parameter **org_id**:
+
+```js #10
+{
+  "given_name": "Demo",
+  "family_name": "User",
+  "nickname": "demouser",
+  "name": "Demo User",
+  "picture": "https://s.gravatar.com/avatar/5e604e192b23f1d6c50e5b7a660d429d?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Ftl.png",
+  "updated_at": "2023-05-19T12:28:42.794Z",
+  "email": "demo.user@domain.com",
+  "email_verified": true,
+  "sub": "okta|Okta1|00u9mgvq4xxxx",
+  "org_id": "org_9EbOosmUXcoSBwj7"
+}
+```
 
 ### 5. Next Step
-- Congratulations, you can now start your successful B2B business! By completing these steps we now can safely integrate our business customers into our application and even make sure to keep track of them through organizations. Under the hood, this brings a lot of value: Your customers admins can still provision / deprovision users, control who has access to your app, and see how frequently your app is used. And you just saved a few days of building your own OpenID Connect integration!
+- Congratulations, you can now start your successful B2B business! By completing these steps, we can now safely integrate our business customers into our application and even make sure to keep track of them through organizations. Under the hood, this brings a lot of value:
+    - Your customers admins can still provision / deprovision users
+    - control who has access to your app
+    - and see how frequently your app is used.
+    - And you just saved a few days of building your own OpenID Connect integration!
 - If you are doing this lab in a guided class, please wait for your instructor to continue the course.
 - Otherwise, you may proceed to the next lab to see how you can give your application a lot more information about our users.

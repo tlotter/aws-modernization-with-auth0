@@ -7,8 +7,9 @@ weight = 10
 # LEARNING OBJECTIVES
 Today we are going to learn the following topics:
 
-- How to authenticate users for Consumer, B2B and SaaS Apps
-- How to customize the full user journey
+- How to authenticate users for Consumer, B2B and SaaS Apps?
+- How to customize the full user journey?
+- How to enrich the Tokes generated for Apps and Backend-Systems?
 
 # WORKSHOP STRUCTURE
 This workshop is broken into the sections listed below. The estimated time for completing the workshop is 1-1.5 hours.

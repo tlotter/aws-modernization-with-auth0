@@ -4,22 +4,25 @@ chapter = false
 weight = 60
 pre = "<b>5. </b>"
 +++
-You already configured Auth0 to handle your users data and make sure businesses have secure access to your app. But our application still misses a lot of information, for example, what pizzas that organization is allowed to order based on their license or what organization is actually called (remember, right now all we know is an organization ID). This is what we will achieve in this lab!
+You already configured Auth0 to handle your users data and made sure businesses have secure access to your app. But our application still misses a lot of information, for example, what pizzas that organization is allowed to order based on their license or what organization is actually called (all we know so far is an organization ID).
 
 ### 1. Add Metadata to Organization
 
-1. Go to your organization by navigating to **Organizations** in the Auth0 sidebar.
-2. Selecting the organization you have created in the previous lab.
-3. Scroll down in the **Overview** tab, find the metadata table, and create new metadata with the key `license` and the value `corporate` (it's important to write both in lowercase).
+1. At the navigation bar on the right of the Auth0 Management Dashboard, go to **Organizations**.
+2. Click on the organization name **org1**.
+3. Scroll down to the metadata table and create new metadata with the following values:
+    - Key: `license`
+    - Value: `corporate`
+    - Click on **+ Add**.
 
 ### 2. Create Auth0 Action
 
-To get this information to our application, we need to utilize Auth0 Actions. Actions are JavaScript code snippets that run during the login flow (or in other places, depending on where you integrate them) and which allow you to modify the login flow to your liking.
+To get the organization license to our application, we need to utilize Auth0 Actions. Actions are JavaScript code snippets that run during the login flow (or in other places, depending on where you integrate them) and which allow you to modify the login flow to your liking.
 
-1. To build our action, go to **Actions** -> **Flows** in the Auth0 Sidebar and select **Login** (This is where the action will be executed).
-2. In the top right, click on the **plus** next to **Add Action** -> **Build Custom**.
-3. Give your action some expressive name (like `Enrich ID Token`) and click on **Create**.
-4. In the code editor you have just opened, you can now write your logic to add two new attributes (called claims) to the ID Token that Auth0 issues on every login. The two claims we need are the following:
+1. At the navigation bar on the right, go to **Actions** -> **Flows** and click on **Login** (This is where the action will be executed).
+2. Next to **Add Action**, click on the **+** button and click on **Build Custom**.
+3. Enter the Name `Enrich ID Token` and click on **Create**.
+4. In the displayed code editor, you will write some logic to add two new attributes (called claims) to the ID Token that Auth0 issues on every login. The two claims we add are;
     - https://pizza0.net/organization with the organizations display name as a value
     - https://pizza0.net/license with the organizations license (which we just set in the metadata) as a value.
 5. Paste the following Code Snippet
@@ -46,11 +49,35 @@ exports.onExecutePostLogin = async (event, api) => {
 - You can also check for the organization with `if(event.organization)`.
 
 ### 3. Deploy and use Auth0 Action
-- Click on Deploy and **Add to flow** (or go back to **Actions** -> **Post-Login**, choose **Custom** in the sidebar and drag your Action into the flow)
-- Click on **Save** and log your user in once again.
-- You should now be able to order all pizzas on the site and should see the organizations name in the top bar.
+1. Click on **Deploy** in the top right.
+2. Click **Back to flow**.
+3. On the right switch to the tab **Custom** and drag-n-drop **Enrich ID Token** to the flow in the center.
+4. Click on **Apply** in the the top right.
 
-### 4. Next Step
+### 4. Test
+
+1. Navigate to your application, logout and login again (`http://localhost:3000`). 
+2. You will be asked to enter your organizations name. Enter `org1` and click on **Continue**.
+    - The login will automatically redirect you to your Identity Provider (aka Okta if you follow the lab), where you can sign in with your users credentials.
+3. After successful login, click on your Profile on the top left right corner and click on **Profile**.
+4. You will notice, that the desplayed JSON has the new parameter **org_id**:
+
+```js #10
+{
+  "given_name": "Demo",
+  "family_name": "User",
+  "nickname": "demouser",
+  "name": "Demo User",
+  "picture": "https://s.gravatar.com/avatar/5e604e192b23f1d6c50e5b7a660d429d?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Ftl.png",
+  "updated_at": "2023-05-19T12:28:42.794Z",
+  "email": "demo.user@domain.com",
+  "email_verified": true,
+  "sub": "okta|Okta1|00u9mgvq4xxxx",
+  "org_id": "org_9EbOosmUXcoSBwj7"
+}
+```
+
+### 5. Next Step
 - Congratulations, your application just got a lot smarter!
 - If you are doing this lab in a guided class, please wait for your instructor to continue the course.
 - Otherwise, you may proceed to the next lab to see how you can enable collaboration between organizations.
