@@ -1,4 +1,4 @@
-baseURL = "/aws-modernization-with-auth0/"
+baseURL = "/"
 languageCode = "en-US"
 defaultContentLanguage = "en" # Modify to change the default language/version of the site
 

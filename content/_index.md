@@ -4,7 +4,7 @@ chapter = true
 weight = 1
 +++
 
-![Overview](/images/auth0_by_okta_logo.png)
+![Overview](images/auth0_by_okta_logo.png)
 
 Last Updated May 11th 2023.
 
@@ -17,4 +17,4 @@ The goal of the workshop is to build an end-to-end demo environment from creatin
 ## Auth0 and AWS Marketplace
 Auth0 is available on the AWS Marketplace. AWS Marketplace is a digital software catalog that makes it easy to find, try, buy, deploy, and manage software that runs on AWS. AWS Marketplace has a broad and deep selection of ISV solutions that can help you to get your ideal Identity solution in the cloud.
 
-<a href="https://aws.amazon.com/marketplace/pp/prodview-zrkhqreht5sw4?sr=0-1&ref_=beagle&applicationId=AWSMPContessa" target="_blank"><img src="/images/available-in-awsmp-badge.png"></a>
+<a href="https://aws.amazon.com/marketplace/pp/prodview-zrkhqreht5sw4?sr=0-1&ref_=beagle&applicationId=AWSMPContessa" target="_blank"><img src="images/available-in-awsmp-badge.png"></a>
