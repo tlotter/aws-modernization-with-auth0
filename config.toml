@@ -1,4 +1,4 @@
-baseURL = "https://tlotter.github.io/aws-modernization-with-auth0/"
+baseURL = "/aws-modernization-with-auth0/"
 languageCode = "en-US"
 defaultContentLanguage = "en" # Modify to change the default language/version of the site
 
