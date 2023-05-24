@@ -19,7 +19,7 @@ The sample application that we use in this Workshop uses Node.js. You are reques
     - Go to the tab **Settings** and enter as **Allowed Callback URLs** and **Allowed Logout URLs** the callback URL of your application `http://localhost:3000`. If you use Cloud9, the URl is different.
     - Click on **Save Changes**.
 
-![Copy Domain and ClientID](/images/20_10_callback_url.png)
+![Copy Domain and ClientID](images/20_10_callback_url.png)
 
 ### 3. Integate Application
 
@@ -27,7 +27,7 @@ The sample application that we use in this Workshop uses Node.js. You are reques
 2. Paste the **Domain** and **Client ID** from the **Settings**.
 3. **Save** the file.
 
-![Copy Domain and ClientID](/images/20_20_Copy_Domain_ClientID.png)
+![Copy Domain and ClientID](images/20_20_Copy_Domain_ClientID.png)
 
 ### 3. Test
 1. Save your project.
@@ -38,7 +38,7 @@ The sample application that we use in this Workshop uses Node.js. You are reques
 5. Accept the consent screen and you are successfully signed in.
 6. Click in the top right corner on **Profile** to see the ID Token that the applicatoin gets from Auth0.
 
-![Copy Domain and ClientID](/images/20_30_user_profile_page.png)
+![Copy Domain and ClientID](images/20_30_user_profile_page.png)
 
 ### 4. Next Step
 - Congratulations, you now have a working login form!
