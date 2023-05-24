@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://tlotter.github.io/aws-modernization-with-auth0/"
 languageCode = "en-US"
 defaultContentLanguage = "en" # Modify to change the default language/version of the site
 
@@ -8,7 +8,6 @@ metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= "false"
 uglyurls = "true"
 enableEmoji = true
-relativeURLs = true #fix to show pictures on GitHub Pages?
 
 [params]
   # Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page. 
