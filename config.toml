@@ -55,7 +55,11 @@ url = "https://okta.awsworkshop.io/"
 weight = 11
 
 [markup]
-  defaultMarkdownHandler = "goldmark"
+defaultMarkdownHandler = "goldmark"
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true # required to open image with external link
 
 [Languages] # Modify to change the language/version settings and/or version secondary extensions
 [Languages.en]

@@ -16,29 +16,31 @@ The sample application that we use in this Workshop uses Node.js. You are reques
 3. On the prompted Quick Start menu, choose **JavaScript**.
     - Auth0 provides instructions on how to integrate with your existing App or download an example application. We use the sample application cloned from the previous step.
 4. Switch to the tab **Settings**
-    - Our server is running on http://localhost:3000, and the SDK will automatically register a new /callback route, so we can leave the default settings for callback URL (the URL a user is allowed to be redirected to after successful login) and logout URL.
-    - Copy the values of **Domain** and the **Client ID**.
+    - Go to the tab **Settings** and enter as **Allowed Callback URLs** and **Allowed Logout URLs** the callback URL of your application `http://localhost:3000`. If you use Cloud9, the URl is different.
+    - Click on **Save Changes**.
+
+![Copy Domain and ClientID](/images/20_10_callback_url.png)
 
 ### 3. Integate Application
 
 1. Open the file **auth_config.json**, which is in the root folder of the cloned sample application.
-2. Paste the **Domain** and **Client ID** from the previous step.
+2. Paste the **Domain** and **Client ID** from the **Settings**.
+3. **Save** the file.
 
-Here is an example:
-```
-{
-  "domain": "dev-piss2nvlxxxxxxxus.auth0.com",
-  "clientId": "cgziiCcRAmxQzxX3RvxbgXXXXX"
-}
-```
+![Copy Domain and ClientID](/images/20_20_Copy_Domain_ClientID.png)
 
 ### 3. Test
 1. Save your project.
 2. Start the application by typing `npm run dev ` into your terminal.
-3. Navigate to `http://localhost:3000` and click on login.
-4. You can now sign in with your Auth0 credentials, and a consent screen should appear that you can accept.
+3. Navigate to `http://localhost:3000` and click on login in the top right corner.
+    - If an error the error "This site can’t be reached", did you save auth_configuration.json?
+4. Click on **Sign up** to create a new user.
+5. Accept the consent screen and you are successfully signed in.
+6. Click in the top right corner on **Profile** to see the ID Token that the applicatoin gets from Auth0.
+
+![Copy Domain and ClientID](/images/20_30_user_profile_page.png)
 
 ### 4. Next Step
 - Congratulations, you now have a working login form!
 - If you are doing this lab in a guided class, please wait for your instructor to continue the course.
-- Otherwise, you may proceed to customize the login to resemble the Pizza0 brand and user journey better.
+- Otherwise, you may proceed to customize the user journey.

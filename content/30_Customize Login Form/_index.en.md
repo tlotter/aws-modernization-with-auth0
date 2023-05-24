@@ -4,7 +4,7 @@ chapter = false
 weight = 40
 pre = "<b>3. </b>"
 +++
-Our simple login is in place and users can sign in to our application. It does look very generic though and lacks the official Pizza branding. Also, individual customers often use Social Sign-In to access the service which the service doesn't support at the moment as well. Let's change that!
+Our simple login is in place and users can sign in to our application. It looks very generic and lacks an offical branding. Customers can also not use Social Login that simplifies the sign-up rate.
 
 ### 1. Add Branding
 1. In the navigation bar on the right of the Auth0 Dashboard, go to **Branding** -> **Universal Login**.
