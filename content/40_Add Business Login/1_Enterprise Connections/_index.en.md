@@ -22,12 +22,12 @@ The first step is to create a new Okta Tenant. If you have already one, you can 
 4. Set the password of your Okta Account and you are ready to go.
 
 Login to the **Okta Admin Console**. If you see the Okta Dashboard, click on the **Admin** button in the top right corner.
-![Okta - Dashboard login to Admin](/images/40_10_okta_dashboard_admin.png)
+![Okta - Dashboard login to Admin](../images/40_10_okta_dashboard_admin.png)
 
 1. In the navigation bar on the right of the Okta Admin Console, go to **Applications** -> **Applications** and click on **Create App Integration**.
-![Okta - Create OIDC Application](/images/40_20_okta_create_oidc.png)
+![Okta - Create OIDC Application](../images/40_20_okta_create_oidc.png)
 3. Select **OIDC - OpenID Connect** and **Web Application** click on **Next**.
-![Okta - Select OIDC Application Type](/images/40_30_okta_select_oidc_app_type.png)
+![Okta - Select OIDC Application Type](../images/40_30_okta_select_oidc_app_type.png)
 4. Provide the following information
     - **App integration name**: `Auth0 Org1`
     - **Sign-in redirect URIs**: `https://{Auth0-Tenant-ID}.{us/eu}.auth0.com/login/callback`
@@ -35,7 +35,7 @@ Login to the **Okta Admin Console**. If you see the Okta Dashboard, click on the
         - As an alternative, to get it working in this Workshop, select **Allow wildcard * in login URI redirect** and use `https://*.us.auth0.com/login/callback`
     - Select **Allow everyone in your organization to access**.
     - Click on **Save**.
-![Okta - Create OIDC Application](/images/40_40_okta_create_oidc.png)
+![Okta - Create OIDC Application](../images/40_40_okta_create_oidc.png)
 5. Copy the following values:
     - **ClientID**
     - **Client Secret**: Scroll down to the section **CLIENT SECRETS** and click on the Copy button next to the generated secret.
@@ -64,7 +64,7 @@ The final step is to register Okta as a new enterprise connection in Auth0.
     - **Client Secret**: The value you copied earlier.
     - The required **Callback URL** that you configured in Okta is also displayed. If the login is not working, use it to validate that you configured the right value in Okta.
     - Click on **Create**.
-![Okta + Auth0: Configure Enterprise Connection](/images/40_50_okta_auth0_enterprise_configuration.png)
+![Okta + Auth0: Configure Enterprise Connection](../images/40_50_okta_auth0_enterprise_configuration.png)
 4. The tab **Login Experience** is shown.
 5. Go to the section **Connection Button** and select **Display connection as a button**.
 6. Click on **Save**.
