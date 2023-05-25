@@ -16,12 +16,12 @@ The sample application that we use in this Workshop uses Node.js. You are reques
 3. On the prompted Quick Start menu, choose **JavaScript**.
     - Auth0 provides instructions on how to integrate with your existing App or download an example application. We use the sample application cloned from the previous step.
 4. Switch to the tab **Settings**
-    - Go to the tab **Settings** and enter as **Allowed Callback URLs** and **Allowed Logout URLs** the callback URL of your application `http://localhost:3000`. If you use Cloud9, the URl is different.
+    - Go to the tab **Settings** and enter as **Allowed Callback URLs**, ** **Allowed Logout URLs** and **Allowed Web Origins** the callback URL of your application `http://localhost:3000` (If you use Cloud9, the URL is different).
     - Click on **Save Changes**.
 
 ![Copy Domain and ClientID](images/20_10_callback_url.png)
 
-### 3. Integate Application
+### 3. Integrate Application
 
 1. Open the file **auth_config.json**, which is in the root folder of the cloned sample application.
 2. Paste the **Domain** and **Client ID** from the **Settings**.
@@ -36,7 +36,7 @@ The sample application that we use in this Workshop uses Node.js. You are reques
     - If an error the error "This site can’t be reached", did you save auth_configuration.json?
 4. Click on **Sign up** to create a new user.
 5. Accept the consent screen and you are successfully signed in.
-6. Click in the top right corner on **Profile** to see the ID Token that the applicatoin gets from Auth0.
+6. Click in the top right corner on **Profile** to see the ID Token that the application gets from Auth0.
 
 ![Copy Domain and ClientID](images/20_30_user_profile_page.png)
 

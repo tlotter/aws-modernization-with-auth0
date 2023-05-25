@@ -4,9 +4,9 @@ chapter = false
 weight = 50
 pre = "<b>4. </b>"
 +++
-Now that individual users can access the service, we have to think about bringing in our corporate users. Pizza0 could already win their first customers who provide their own Identity Provider (IdP). You are asked to enable users from that organization to log into Pizza0 using Single Sign-On (SSO).
+Individual users can access the service. The next step is to integrate corporate users. We could already win our first customer who provides his **own Identity Provider (IdP)**. You are asked to enable users from that organization to login to our application using **Single Sign-On (SSO)**.
 
 We do this in two steps:
 
-1. Allow to authenticate users from external Identity Providers (IdP) such as Okta.
-2. Enable Auth0 Organizations to better manage B2B customers and enhance the user experience.
+1. Allow authenticating users from **external Identity Providers (IdP)** such as Okta.
+2. Enable Auth0 Organizations to **better manage B2B customers and enhance the user experience**.
