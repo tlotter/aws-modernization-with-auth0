@@ -7,17 +7,16 @@ pre = "<b>2. </b>"
 The sample application that we use in this Workshop uses Node.js. You are requested to evaluate Auth0 to provide the login and user management. In order to get started, make sure you have an Auth0 Tenant and cloned the sampled application as described in the previous chapter **Prerequisites**.
 
 ### 1. Login to Auth0 Management Console
-- If you're using a CIC tenant from demo.okta, open the management console of your tenant via https://demo.okta
 - If you're using a free trial tenant, sign in to https://manage.auth0.com
+- If you're using a CIC tenant from demo.okta, open the management console of your tenant via https://demo.okta
 
 ### 2. Create a new Application
 1. Go to **Applications** -> **Applications** and click on **+ Create Application**.
 2. Enter as Name `CIC Workshop`, select **Single Page Web Application** and click on **Create**.
 3. On the prompted Quick Start menu, choose **JavaScript**.
     - Auth0 provides instructions on how to integrate with your existing App or download an example application. We use the sample application cloned from the previous step.
-4. Switch to the tab **Settings**
-    - Go to the tab **Settings** and enter as **Allowed Callback URLs**, ** **Allowed Logout URLs** and **Allowed Web Origins** the callback URL of your application `http://localhost:3000` (If you use Cloud9, the URL is different).
-    - Click on **Save Changes**.
+4. Switch to the tab **Settings** and enter as **Allowed Callback URLs**, ** **Allowed Logout URLs** and **Allowed Web Origins** the callback URL of your application `http://localhost:3000` (If you use Cloud9, the URL is different).
+5. Click on **Save Changes**.
 
 ![Copy Domain and ClientID](images/20_10_callback_url.png)
 

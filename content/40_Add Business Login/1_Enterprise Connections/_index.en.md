@@ -16,7 +16,7 @@ We will configure Okta as an Enterprise Connection. You have 2 options in this w
 
 The first step is to create a new Okta Tenant. If you have already one, you can also use it.
 
-1. {{% button href="https://developer.okta.com/signup" %}}Click here to create your free Okta account. No credit card is required.{{% /button %}}
+1. [Click here to create your free Okta account.](https://developer.okta.com/signup) No credit card is required.
 2. Select **Sign up free for Developer Edition**.
 3. You will receive an Email. Click on the link to activate your account.
 4. Set the password of your Okta Account and you are ready to go.

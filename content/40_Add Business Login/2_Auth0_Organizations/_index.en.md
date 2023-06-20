@@ -45,15 +45,7 @@ Lastly, we need to let our application know that we expect business users to sig
 
 ```js #10
 {
-  "given_name": "Demo",
-  "family_name": "User",
-  "nickname": "demouser",
-  "name": "Demo User",
-  "picture": "https://s.gravatar.com/avatar/5e604e192b23f1d6c50e5b7a660d429d?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Ftl.png",
-  "updated_at": "2023-05-19T12:28:42.794Z",
-  "email": "demo.user@domain.com",
-  "email_verified": true,
-  "sub": "okta|Okta1|00u9mgvq4xxxx",
+  ...
   "org_id": "org_9EbOosmUXcoSBwj7"
 }
 ```
