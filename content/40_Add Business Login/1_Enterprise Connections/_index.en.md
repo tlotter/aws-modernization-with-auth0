@@ -32,7 +32,7 @@ Login to the **Okta Admin Console**. If you see the Okta Dashboard, click on the
     - **App integration name**: `Auth0 Org1`
     - **Sign-in redirect URIs**: `https://{Auth0-Tenant-ID}.{us/eu}.auth0.com/login/callback`
         - You can find the name by going to https://manage.auth0.com/dashboard/region/tenant-name
-        - As an alternative, to get it working in this Workshop, select **Allow wildcard * in login URI redirect** and use `https://*.us.auth0.com/login/callback`
+        - As an alternative, to get it working in this Workshop, select **Allow wildcard * in login URI redirect** and use `https://*.{us/eu}.auth0.com/login/callback`
     - Select **Allow everyone in your organization to access**.
     - Click on **Save**.
 ![Okta - Create OIDC Application](../images/40_40_okta_create_oidc.png)

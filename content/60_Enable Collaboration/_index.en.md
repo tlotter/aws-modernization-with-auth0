@@ -11,7 +11,7 @@ We want to bring in a second organization and enable collaboration with the firs
 
 1. Create a new Enterprise Connection with the name `Okta2`
     - Follow the instructions of chapter [4.1 Enterprise Connections]( {{< ref "40_Add Business Login/1_Enterprise Connections" >}}).
-    - If you use your own Okta tenant, just create a new OIDC Application. A new Okta tenant is not required!
+    - If you use your own Okta tenant, just create a new OIDC Application `Auth0 Org2`. A new Okta tenant is not required!
     - The new Okta connection cannot be tested yet, as the Organization **org1** only allows access from the enterprise connection **Okta1**.
 2. Create a new Organization with the name `org2` and the metadata `license` = `premium`.
     - Follow the instructions of chapter [4.2 Auth0 Organization]( {{< ref "40_Add Business Login/2_Auth0_Organizations" >}})

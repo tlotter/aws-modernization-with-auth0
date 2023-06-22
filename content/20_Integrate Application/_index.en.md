@@ -15,7 +15,7 @@ The sample application that we use in this Workshop uses Node.js. You are reques
 2. Enter as Name `CIC Workshop`, select **Single Page Web Application** and click on **Create**.
 3. On the prompted Quick Start menu, choose **JavaScript**.
     - Auth0 provides instructions on how to integrate with your existing App or download an example application. We use the sample application cloned from the previous step.
-4. Switch to the tab **Settings** and enter as **Allowed Callback URLs**, ** **Allowed Logout URLs** and **Allowed Web Origins** the callback URL of your application `http://localhost:3000` (If you use Cloud9, the URL is different).
+4. Switch to the tab **Settings** and enter as **Allowed Callback URLs**, **Allowed Logout URLs** and **Allowed Web Origins** the callback URL of your application `http://localhost:3000` (If you use Cloud9, the URL is different).
 5. Click on **Save Changes**.
 
 ![Copy Domain and ClientID](images/20_10_callback_url.png)
