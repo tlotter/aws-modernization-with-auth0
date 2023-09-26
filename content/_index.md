@@ -6,7 +6,7 @@ weight = 1
 
 ![Overview](images/auth0_by_okta_logo.png)
 
-Last Updated June 20th 2023.
+Last Updated September 26th 2023.
 
 In this Workshop, you will learn how to secure Consumer, B2B and SaaS applications with Auth0 by Okta.
 

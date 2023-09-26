@@ -31,8 +31,7 @@ Lastly, we need to let our application know that we expect business users to sig
 1. At the navigation bar on the right of the Auth0 Management Dashboard, go to **Applications** -> **Applications**
 2. Click on the name of the **CIC Workshop** Application.
 3. Switch to the tab **Organizations**.
-4. Select **Team members of organizations** and **Display Organization Prompt**.
-    - Note: Eventually the option to enable organizations will be greyed out. There will be a warning box that some login grants have to be disabled first. Click on **Disable Grants Now** and proceed.
+4. Select **Business Users** and as Login Flow **Prompt for Organization**.
 5. Click on **Save Changes**.
 
 ### 4. Test
