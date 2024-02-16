@@ -18,9 +18,9 @@ You need access to an Auth0 Tenant. If you are doing this lab in a guided class,
 2. **Node.js** Version 16 or higher (check: `node -v`)
 3. Install **git/gh cli** (check: `git --version`, https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 4. Clone the lab repository to your local machine
-    - `git clone https://github.com/escobar022/okta-cic-workshop-sandbox.git`
+    - `git clone https://github.com/auth0-samples/auth0-javascript-samples.git`
 5. Install dependencies
-    - `cd okta-cic-workshop-sandbox && npm i`
+    - `cd auth0-javascript-samples/01-Login && npm i`
 
 ### 3. Follow with Cloud9 IDE (AWS Account required)
 If you want to use Cloud9, you need access to an AWS Account.
@@ -32,9 +32,9 @@ The next step is to clone the sample application to the Cloud9 IDE:
 1. Sign-in to your AWS Accound and open the Cloud9 IDE.
 ![Open Cloud9](images/10_10_open_cloud9.png)
 2. Clone the lab repository
-    - `git clone https://github.com/escobar022/okta-cic-workshop-sandbox.git`
+    - `git clone https://github.com/auth0-samples/auth0-javascript-samples.git`
 3. Install dependencies
-    - `cd okta-cic-workshop-sandbox && npm i`
+    - `cd auth0-javascript-samples/01-Login && npm i`
 
 The Cloud9 Environment has a different URL than if you follow with your local IDE. Get the URL of the Cloud9, that we need in the next step for the local callback URL
 1. Go to **Preview** and click on **Preview Running Application**.

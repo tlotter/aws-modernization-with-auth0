@@ -8,11 +8,11 @@ Our simple login is in place and users can sign in to our application. It looks 
 
 ### 1. Add Branding
 1. In the navigation bar on the right of the Auth0 Dashboard, go to **Branding** -> **Universal Login**.
-2. Enter the logo as well as the primary and background color specified.
-    - Logo: `https://pizza0lab.s3.eu-central-1.amazonaws.com/pizza.jpeg`
-    - Primary color: `#EB5424`
-    - Background color: `#3A3A3A`
-3. Click on **Save**
+2. Click on **Customization Options**
+2. Change some styling options e.g.
+    - Colors > **Primary button**: `#EB5424`
+    - Page background > **Background color**: `#3A3A3A`
+3. Click on **Save And Publish**
 4. Navigate to your application and retry the login (`http://localhost:3000`).
 
 ### 2. Add Social Login

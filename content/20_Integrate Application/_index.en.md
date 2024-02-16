@@ -22,20 +22,23 @@ The sample application that we use in this Workshop uses Node.js. You are reques
 
 ### 3. Integrate Application
 
-1. Open the file **auth_config.json**, which is in the root folder of the cloned sample application.
-2. Paste the **Domain** and **Client ID** from the **Settings**.
-3. **Save** the file.
+1. Switch to the folder **01-Login** in the cloned sample application.
+2. Rename **auth_config.json.example** to **auth_config.json**
+3. Open the file **auth_config.json**
+4. Paste the **Domain** and **Client ID** from the **Settings**.
+5. **Save** the file.
 
 ![Copy Domain and ClientID](images/20_20_Copy_Domain_ClientID.png)
 
 ### 3. Test
 1. Save your project.
-2. Start the application by typing `npm run dev ` into your terminal.
-3. Navigate to `http://localhost:3000` and click on login in the top right corner.
+2. Change in the terminal to the folder **01-Login** `cd 01-Login`
+3. Start the application by typing `npm run dev ` into your terminal.
+4. Navigate to `http://localhost:3000` and click on login in the top right corner.
     - If an error the error "This site can’t be reached", did you save auth_configuration.json?
-4. Click on **Sign up** to create a new user.
-5. Accept the consent screen and you are successfully signed in.
-6. Click in the top right corner on **Profile** to see the ID Token that the application gets from Auth0.
+5. Click on **Sign up** to create a new user.
+6. Accept the consent screen and you are successfully signed in.
+7. Click in the top right corner on **Profile** to see the ID Token that the application gets from Auth0.
 
 ![Copy Domain and ClientID](images/20_30_user_profile_page.png)
 
